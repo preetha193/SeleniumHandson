@@ -12,8 +12,8 @@ public class Arraydemo {
 		//		ii) Convert a big decimal to double"
 
 		
-		double a=100;
-		double b = new BigDecimal(100).doubleValue();
+		double a=100; 
+		double b = new BigDecimal(100).doubleValue(); //now b is conv from bigdecimal to double using doublevalue()
 		double c = a*b;
 		System.out.println(c);
 		

@@ -8,8 +8,7 @@ public class LinkedListExample {
 	public void LinkedExample() {
 		LinkedList<Integer>linkedList=new LinkedList<Integer>();
 		
-		for(Integer obj2: linkedList)
-			System.out.println("The elements in the linked list: " +obj2);
+		
 			
 			
 		linkedList.add(2);
@@ -20,8 +19,11 @@ public class LinkedListExample {
 		System.out.println("The list: "+linkedList);
 		//add an element to the first position linked list
 		
+		for(Integer obj2: linkedList) //it displays the elements one by one
+			System.out.println("The elements in the linked list: " +obj2);
+		
 		linkedList.addFirst(1);
-		linkedList.addLast(5);
+		linkedList.addLast(5); // we are adding 5 again, duplication accepted
 		
 		System.out.println("The newly added item: " +linkedList);
 		

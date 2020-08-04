@@ -13,15 +13,16 @@ public class ArrayExample {
 		// we are using array List
 		//<String> is nothing but the input passed is string in the list. if we try to add an integer, then it will throw an error since it s declared as string
 		List <String> arrayList=new ArrayList<String>();
-		//adding the elements to the array
+		//syntax is List <data_type> object=new ArrayList<data_type>();
+		//adding the elements to the array, here arrayList is the object
 		arrayList.add("BMW");
 		arrayList.add("Benz");
 		arrayList.add("Bentley");
 		arrayList.add("BMW");
 		System.out.println(arrayList.get(1)); 
 		System.out.println(arrayList.indexOf("BMW")); // it display the first occurrence of array index
-		System.out.println(arrayList.lastIndexOf("BMW")); //it displays the last index of the given array
-		//if any element which is not availbale in the array, it will return -1
+		System.out.println(arrayList.lastIndexOf("BMW")); //it displays the last index of the given array since arraylist allows duplication
+		//if any element which is not available in the array, it will return -1
 		System.out.println(arrayList.indexOf("Maruti"));
 		//copy the list of string to another list
 		List <String> anotherList= new ArrayList<String>();

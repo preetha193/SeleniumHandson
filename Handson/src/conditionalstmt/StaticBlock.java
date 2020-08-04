@@ -2,7 +2,7 @@ package conditionalstmt;
 
 public class StaticBlock {
 	
-	static
+	static 
 	{
 		System.out.println("This is first static block");
 	}

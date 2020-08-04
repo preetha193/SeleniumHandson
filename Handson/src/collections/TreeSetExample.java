@@ -22,7 +22,7 @@ public class TreeSetExample {
 		// headset will display from start of the list to the element 
 		//before it is mentioned in the headset(); here it will display before 9
 		System.out.println("Tree output: "+tree.headSet(9));
-		//tail will display the inclusive of that mentioned element and the upcoming elements in the list
+		//trail will display the inclusive of that mentioned element and the upcoming elements in the list
 		System.out.println("Tree output: "+tree.tailSet(2));
 		//subset gives the elements bet start and end values..say [0,1,2,4,9,11] if we say bet 2 and 9, it displays 2,4
 		System.out.println("Tree output: "+tree.subSet(2, 9));

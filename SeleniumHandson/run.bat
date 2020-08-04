@@ -1,0 +1,1 @@
+Java –cp bin;lib/*
