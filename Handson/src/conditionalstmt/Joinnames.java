@@ -14,12 +14,13 @@ public class Joinnames {
 	}
 	public void join()
 	{
-		//String join1=completesentence.replaceAll("\\s", "");
+		String join1=completesentence.replaceAll(" ", "");
+		System.out.println("The space removed sentence: "+join1);
 		String concat=completesentence.concat(completesentence);
-		//String spaceremoved=Fullname.trim();
+		String spaceremoved=Fullname.trim();
 		System.out.println("Splitted name is: "+concat);
-		//System.out.println("Splitted name is: "+spaceremoved.trim());
-		//System.out.println("Splitted name is: "+spaceremoved);
+		System.out.println("Splitted name is: "+spaceremoved.trim()); //it removes front and back empty spaces
+		System.out.println("Splitted name is: "+spaceremoved);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

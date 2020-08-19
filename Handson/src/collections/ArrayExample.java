@@ -18,7 +18,7 @@ public class ArrayExample {
 		arrayList.add("BMW");
 		arrayList.add("Benz");
 		arrayList.add("Bentley");
-		arrayList.add("BMW");
+		arrayList.add("BMW");//arraylist allows duplication
 		System.out.println(arrayList.get(1)); 
 		System.out.println(arrayList.indexOf("BMW")); // it display the first occurrence of array index
 		System.out.println(arrayList.lastIndexOf("BMW")); //it displays the last index of the given array since arraylist allows duplication

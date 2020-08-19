@@ -26,7 +26,7 @@ This is nothing but override. */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //we are using dynamic polymorphism i.e overriding
-		//using the parent class and creating boject for child class and calling the parent class.
+		//using the parent class and creating object for child class and calling the parent class.
 		Car car=new BMW();
 		car.companyValut();
 		car.engineSecret();

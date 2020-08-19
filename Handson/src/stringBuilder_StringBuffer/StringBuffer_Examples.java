@@ -31,7 +31,7 @@ public class StringBuffer_Examples {
 		
 		//String Sname1="Testing Practice";
 		//System.out.println("Deleted Text: "+Sname1.);
-		System.out.println("Appending int to the name: "+Sname.append(10));
+		System.out.println("Appending int to the name: "+Sname.append(9));
 		Object obj="geeks";
 		System.out.println("Adding the object: "+Sname.append(obj));
 		
