@@ -25,19 +25,27 @@ public class CheckboxExample {
 				//deselect the selected checkbox
 
 		WebElement FirstElement=driver.findElement(By.xpath("//*[@id='contentblock']/section/div[3]/div[1]/input"));
-
+		//*[@id='contentblock']/section/div[3]/div[1]
+		
+		
 		if(FirstElement.isSelected())
 		{
 			FirstElement.click();
 		}
-		WebElement Secondcheckbox= driver.findElement(By.xpath("//*[@id='contentblock']/section/div[3]/div[1]/input"));
+		WebElement Secondcheckbox= driver.findElement(By.xpath("//*[@id='contentblock']/section/div[3]/div[2]/input"));
 		if (Secondcheckbox.isSelected())
 		{
 			Secondcheckbox.click();
+					
 		}
+		//click all the options
 		WebElement option1=driver.findElement(By.xpath("//*[@id=\'contentblock\']/section/div[4]/div[1]/input"));
 		option1.click();
-		driver.findElement(By.xpath("//*[@id=\'contentblock\']/section/div[4]/div[2]/input")).click();
+		WebElement option2=driver.findElement(By.xpath("//*[@id=\'contentblock\']/section/div[4]/div[2]/input"));
+		option2.click();
+		WebElement option3=driver.findElement(By.xpath("//*[@id=\'contentblock\']/section/div[4]/div[3]/input"));
+		option3.click();
+		
 
 
 

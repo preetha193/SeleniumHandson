@@ -15,6 +15,7 @@ public class Tooltip {
 		 WebElement name=driver.findElement(By.id("age"));
 		 //title is displayed along with the input id "age" so we get the title and store it in tooltip string variable.
 		 String Tooltip=name.getAttribute("title");
+		 
 		 System.out.println("The tool tip is: "+Tooltip);
 		 driver.close();
 		 

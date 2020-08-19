@@ -11,7 +11,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Selectable {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\joyka\\Documents\\WebDrivers\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://www.leafground.com/pages/selectable.html");
@@ -25,16 +25,20 @@ public class Selectable {
 		//task: to select 1-3 items in the list
 		 
 		//step1: we are pressing control in the keyboard to select
-		/*Actions actions=new Actions(driver);
-		actions.keyDown(Keys.CONTROL).click(Selectable.get(0)).
-		click(Selectable.get(1)).click(Selectable.get(2)).build().perform(); */
-		
-		//Otherway to select items easy method
 		Actions actions=new Actions(driver);
-		actions.clickAndHold(Selectable.get(1)).build().perform();;
-		actions.clickAndHold(Selectable.get(5)).build().perform();;
-		actions.clickAndHold(Selectable.get(6)).build().perform();;
-		//actions.build().perform();
+		actions.keyDown(Keys.CONTROL).click(Selectable.get(0)).
+		click(Selectable.get(3)).click(Selectable.get(4)).build().perform(); 
+		//actions class is for keyboard and mouse activities
+		//Otherway to select items easy method but when we run the below code, it selects from 0 to 4 even we din give 1,2 for selection. 
+		//might be it takes consecutive numbers
+		/*Actions actions=new Actions(driver);
+		actions.clickAndHold(Selectable.get(0));
+		Thread.sleep(3000);
+		actions.clickAndHold(Selectable.get(3));
+		Thread.sleep(3000);
+		actions.clickAndHold(Selectable.get(4));
+		
+		actions.build().perform();*/
 		
 		
 		

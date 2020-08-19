@@ -17,8 +17,10 @@ public class MultipleWindows {
 		Windows.click();
 		String parentwindow=driver.getCurrentUrl();
 		//to get the control on the parent window we use windowhandle method
-		String oldWindow=driver.getWindowHandle(); // since its return type is string we store it in string.
-		System.out.println("The current window is: "+parentwindow);
+		String oldWindow=driver.getWindowHandle();
+		// since its return type is string we store it in string.
+		
+		//System.out.println("The current window is: "+parentwindow);
 		//task 1 click button to open home page. so it opens the home page where it contains all the elements say edit, textbox, alert
 		WebElement homepagebutton=driver.findElement(By.id("home"));
 		homepagebutton.click();

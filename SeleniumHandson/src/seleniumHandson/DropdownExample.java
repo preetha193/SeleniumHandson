@@ -25,19 +25,36 @@ public class DropdownExample {
 		Select select= new Select(dropdown1);
 		// index starts from 0 and if we pass 0, first element will be selected and based on the index.
 		select.selectByIndex(3);
-		select.selectByValue("2"); // since its string, we give it in quotes
-		select.selectByVisibleText("Selenium");
-	
+		//select by text
+		WebElement selectbyText=driver.findElement(By.name("dropdown2"));
+		Select select2=new Select(selectbyText);
+		select2.selectByVisibleText("Selenium");
+
+		//select by value
+		WebElement selectByValue=driver.findElement(By.xpath("//*[@id=\'dropdown3\']"));
+		Select select3=new Select(selectByValue);
+		select3.selectByValue("2"); // since its string, we give it in quotes
+
+
 
 		// how to get the number of options in dropdown box, to get all the options we cannot use single variable so we use list
 		List<WebElement> NoofOptions= select.getOptions();
 		int NoofElementsinDropdown=NoofOptions.size();
 		System.out.println("Total no of elements in Dropdown: " +NoofElementsinDropdown);
+		
+		List<WebElement> allElements=select.getOptions();
+		//displays all the text in the dropdown box
+		
+		for (WebElement webElement : allElements) {
+			System.out.println("Elements present in the checkbox: "+webElement.getText());
+		}
 
 
 		// we are going to use sendkeys
-		dropdown1.sendKeys("LoadRunner");
-		
+		WebElement sendbyKeys=driver.findElement(By.xpath("//*[@id='contentblock']/section/div[5]/select"));
+		//Select select4=new Select(sendbyKeys);
+		//select4.ssendKeys("LoadRunner");
+		sendbyKeys.sendKeys("LoadRunner");
 
 		//multiselect
 		////*[@id=\'contentblock\']/section/div[6]/select" should be the xpath cos wen we select the option, it might get extended as //*[@id="contentblock"]/section/div[6]/select/option[2]
